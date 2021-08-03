@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		E671EF3726B8EEAB00DA0FFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E671EF3526B8EEAB00DA0FFD /* Main.storyboard */; };
 		E671EF3926B8EEAF00DA0FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E671EF3826B8EEAF00DA0FFD /* Assets.xcassets */; };
 		E671EF3C26B8EEAF00DA0FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E671EF3A26B8EEAF00DA0FFD /* LaunchScreen.storyboard */; };
+		E6A27F4226B8F38400D79D9F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E6A27F4126B8F38400D79D9F /* RxSwift */; };
+		E6A27F4426B8F38400D79D9F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E6A27F4326B8F38400D79D9F /* RxCocoa */; };
+		E6A27F4726B8F46400D79D9F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E6A27F4626B8F46400D79D9F /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A27F4726B8F46400D79D9F /* RealmSwift in Frameworks */,
+				E6A27F4426B8F38400D79D9F /* RxCocoa in Frameworks */,
+				E6A27F4226B8F38400D79D9F /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = iOSTimeChecker;
+			packageProductDependencies = (
+				E6A27F4126B8F38400D79D9F /* RxSwift */,
+				E6A27F4326B8F38400D79D9F /* RxCocoa */,
+				E6A27F4626B8F46400D79D9F /* RealmSwift */,
+			);
 			productName = iOSTimeChecker;
 			productReference = E671EF2C26B8EEAB00DA0FFD /* iOSTimeChecker.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +121,10 @@
 				Base,
 			);
 			mainGroup = E671EF2326B8EEAB00DA0FFD;
+			packageReferences = (
+				E6A27F4026B8F38400D79D9F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E6A27F4526B8F46400D79D9F /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = E671EF2D26B8EEAB00DA0FFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +356,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6A27F4026B8F38400D79D9F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+		E6A27F4526B8F46400D79D9F /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6A27F4126B8F38400D79D9F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6A27F4026B8F38400D79D9F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		E6A27F4326B8F38400D79D9F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6A27F4026B8F38400D79D9F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E6A27F4626B8F46400D79D9F /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6A27F4526B8F46400D79D9F /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E671EF2426B8EEAB00DA0FFD /* Project object */;
 }
