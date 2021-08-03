@@ -1,12 +1,13 @@
 //
 //  SceneDelegate.swift
-//  iOSTimeChecker
+//  TimeRangeChcker
 //
-//  Created by 志水拓哉 on 2021/08/03.
+//  Created by 志水拓哉 on 2021/07/31.
 //
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
