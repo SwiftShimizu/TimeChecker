@@ -171,7 +171,6 @@
 			children = (
 				E6A27F6026B8F5D300D79D9F /* Result */,
 				E6A27F6226B8F5D300D79D9F /* Launch */,
-				E6A27F6526B8F5D300D79D9F /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,13 +189,6 @@
 				E6A27F6326B8F5D300D79D9F /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
-			sourceTree = "<group>";
-		};
-		E6A27F6526B8F5D300D79D9F /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		E6A27F6626B8F5D400D79D9F /* ViewModel */ = {
